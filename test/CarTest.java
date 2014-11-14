@@ -36,7 +36,8 @@ public class CarTest {
 	public void canDecelerate(){
 		Car car1 = new Car("Red", 100);
 		car1.accelerate(50);
-		assertThat(car1.decelerate(10), is(40));
+		car1.decelerate(10);
+		assertThat(car1.getSpeed(), is(40));
 	}
 
 	// Create and pass test for no deceleration below 0.

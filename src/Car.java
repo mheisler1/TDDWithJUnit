@@ -45,4 +45,7 @@ public class Car {
 		return("Color: "+color+", Speed: "+speed);
 	}
 
+	public void decelerate(int amount){
+		this.speed -= amount;
+	}
 }
